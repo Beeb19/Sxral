@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sxral Spa — Abuja | Where Discretion Meets Excellence</title>
+<meta name="description" content="Sxral Spa, Abuja FCT. Massage, hot stone therapy, facials and body rituals in a calm, private sanctuary. Book on WhatsApp: 0706 113 6203.">
+<meta property="og:title" content="Sxral Spa — Abuja">
+<meta property="og:description" content="Where discretion meets excellence. Book your ritual on WhatsApp.">
+<meta property="og:image" content="images/lounge-gold.jpg">
+<meta name="theme-color" content="#2f3b1c">
+<link rel="icon" type="image/png" href="images/logo-96.png">
+<link rel="apple-touch-icon" href="images/logo-192.png">
+<link rel="preload" as="image" type="image/webp" imagesrcset="images/vines-480.webp 480w, images/vines-800.webp 800w, images/vines-1200.webp 1200w, images/vines-1800.webp 1800w" imagesizes="100vw" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --linen:#f5f0e6;
+  --sand:#ebe3d3;
+  --paper:#fbf8f2;
+  --olive:#5a6b2c;
+  --olive-deep:#2f3b1c;
+  --moss:#3f4d22;
+  --teal:#6aa89c;
+  --lime:#a9c77e;
+  --clay:#b26f45;
+  --ink:#242a1b;
+  --muted:#6b6f5e;
+  --line:rgba(47,59,28,.16);
+  --serif:"Cormorant Garamond",Georgia,serif;
+  --sans:"Jost",system-ui,-apple-system,sans-serif;
+  --gutter:clamp(16px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:84px}
+body{background:var(--linen);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+picture{display:contents}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1280px;margin:0 auto;padding:0 var(--gutter)}
+.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;font-weight:500;color:var(--olive)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.02;letter-spacing:-.01em}
+h2{font-size:clamp(40px,6vw,76px)}
+h2 em,h1 em{font-style:italic;color:var(--olive)}
+
+.btn{display:inline-flex;align-items:center;gap:12px;padding:16px 28px;border-radius:999px;font-family:var(--sans);font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;transition:transform .3s,background .3s,color .3s;cursor:pointer;border:0}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-solid{background:var(--olive-deep);color:var(--paper)}
+.btn-solid:hover{background:var(--olive);transform:translateY(-2px)}
+.btn-light{background:var(--paper);color:var(--olive-deep)}
+.btn-light:hover{background:var(--lime);transform:translateY(-2px)}
+.btn-ghost{border:1px solid currentColor;color:var(--olive-deep);background:transparent}
+.btn-ghost:hover{background:var(--olive-deep);color:var(--paper)}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .4s,box-shadow .4s}
+.nav.scrolled{background:rgba(245,240,230,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:36px;height:auto}
+.brand span{font-family:var(--serif);font-size:26px;letter-spacing:.24em;font-weight:500}
+.nav-links{display:flex;gap:36px;font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.nav-links a{position:relative;padding:4px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:currentColor;transition:width .3s}
+.nav-links a:hover::after{width:100%}
+.nav .btn{padding:12px 22px;font-size:12px}
+.nav:not(.scrolled){color:var(--paper)}
+.nav:not(.scrolled) .btn-solid{background:var(--paper);color:var(--olive-deep)}
+.nav:not(.scrolled) .brand img{filter:brightness(0) invert(1)}
+.nav .wrap{position:relative;z-index:1}
+.nav-right{display:flex;align-items:center;gap:10px}
+.menu-btn{display:none;width:46px;height:46px;border-radius:50%;border:1px solid currentColor;background:transparent;color:inherit;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.menu-btn span{display:block;width:18px;height:1.5px;background:currentColor;transition:transform .3s}
+.nav.open .menu-btn span:first-child{transform:translateY(3.75px) rotate(45deg)}
+.nav.open .menu-btn span:last-child{transform:translateY(-3.75px) rotate(-45deg)}
+.mmenu{position:fixed;inset:0;z-index:0;background:var(--olive-deep);color:var(--linen);padding:110px var(--gutter) 40px;display:flex;flex-direction:column;justify-content:space-between;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;overflow-y:auto}
+.nav.open .mmenu{opacity:1;visibility:visible}
+.mmenu nav{display:flex;flex-direction:column}
+.mmenu nav a{font-family:var(--serif);font-size:clamp(36px,10vw,56px);line-height:1.15;padding:8px 0;border-bottom:1px solid rgba(245,240,230,.12)}
+.nav .mmenu .btn{align-self:flex-start;margin-top:32px;padding:16px 28px;font-size:14px}
+.nav.open,.nav.open.scrolled{background:transparent;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;color:var(--paper)}
+.nav.open .brand img{filter:brightness(0) invert(1)}
+.nav.open .wrap>.nav-right>.btn-solid{background:var(--paper);color:var(--olive-deep)}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:var(--paper);overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:#6b4a36}
+.hero-bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:drift 18s ease-out forwards}
+@keyframes drift{to{transform:scale(1)}}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,34,17,.6) 0%,rgba(28,34,17,.35) 40%,rgba(28,34,17,.82) 100%)}
+.hero .eyebrow,.hero h1{text-shadow:0 2px 24px rgba(20,25,12,.5)}
+.hero .wrap{position:relative;width:100%;padding-bottom:clamp(48px,9vh,96px);padding-top:140px}
+.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:end}
+.hero .eyebrow{color:var(--lime);margin-bottom:24px;display:flex;align-items:center;gap:14px}
+.hero .eyebrow::before{content:"";width:40px;height:1px;background:currentColor}
+.hero h1{font-size:clamp(54px,9.5vw,148px);line-height:.92}
+.hero h1 em{color:var(--lime)}
+.hero-side p{font-size:18px;max-width:380px;opacity:.92;margin-bottom:32px}
+.hero-meta{display:flex;gap:32px;margin-top:48px;padding-top:24px;border-top:1px solid rgba(251,248,242,.25);font-size:13px;letter-spacing:.12em;text-transform:uppercase;flex-wrap:wrap}
+.hero-meta b{display:block;font-family:var(--serif);font-size:28px;letter-spacing:0;text-transform:none;font-weight:400;font-style:italic;color:var(--lime)}
+
+/* intro */
+.intro{padding:clamp(96px,14vw,180px) 0}
+.intro-grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(40px,7vw,120px);align-items:center}
+.intro-media{position:relative}
+.intro-media .arch{border-radius:999px 999px 24px 24px;overflow:hidden;aspect-ratio:3/4}
+.intro-media .arch img{width:100%;height:100%;object-fit:cover}
+.intro-media .badge{position:absolute;right:-28px;bottom:48px;width:150px;height:150px;border-radius:50%;background:var(--olive-deep);display:grid;place-items:center}
+.intro-media .badge img{width:62px;filter:brightness(0) invert(1) sepia(1) hue-rotate(40deg) saturate(2) brightness(.95)}
+.intro-media .badge svg{position:absolute;inset:0;animation:spin 28s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.intro h2{margin:20px 0 32px}
+.intro p{color:var(--muted);max-width:540px;margin-bottom:18px}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;padding-top:36px;border-top:1px solid var(--line)}
+.pillars h3{font-size:24px;margin-bottom:6px}
+.pillars p{font-size:15px;margin:0}
+
+/* marquee */
+.marquee{background:var(--olive-deep);color:var(--linen);overflow:hidden;padding:26px 0;white-space:nowrap}
+.marquee-track{display:inline-flex;gap:56px;animation:marq 40s linear infinite;font-family:var(--serif);font-size:clamp(28px,4vw,46px);font-style:italic}
+.marquee-track span{display:inline-flex;align-items:center;gap:56px}
+.marquee-track span::after{content:"";width:14px;height:14px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--lime))}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* services */
+.services{padding:clamp(96px,12vw,160px) 0;background:var(--paper)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:64px;flex-wrap:wrap}
+.sec-head h2{margin-top:16px}
+.sec-head p{max-width:380px;color:var(--muted)}
+.svc-list{border-top:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:72px 1.2fr 2fr auto;gap:32px;align-items:center;padding:30px 0;border-bottom:1px solid var(--line);transition:padding .35s,background .35s}
+.svc:hover{padding-left:18px;padding-right:18px;background:var(--linen)}
+.svc .num{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--olive)}
+.svc h3{font-size:clamp(28px,3vw,38px)}
+.svc p{color:var(--muted);font-size:15.5px}
+.svc .book{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--olive-deep);white-space:nowrap}
+.svc .book i{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:background .3s,color .3s,border-color .3s;font-style:normal}
+.svc:hover .book i{background:var(--olive-deep);color:var(--paper);border-color:var(--olive-deep)}
+
+/* gallery */
+.gallery{padding:clamp(96px,12vw,160px) 0}
+.gal{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(120px,14vw,200px);gap:16px;margin-top:56px}
+.gal figure{overflow:hidden;border-radius:18px;position:relative}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;left:16px;bottom:14px;color:var(--paper);font-size:12px;letter-spacing:.18em;text-transform:uppercase;text-shadow:0 1px 10px rgba(0,0,0,.45)}
+.g1{grid-column:1/8;grid-row:span 3}
+.g2{grid-column:8/13;grid-row:span 2}
+.g3{grid-column:8/13;grid-row:span 3}
+.g4{grid-column:1/5;grid-row:span 2}
+.g5{grid-column:5/8;grid-row:span 1}
+.gal .quote{grid-column:5/8;grid-row:span 1;background:var(--olive-deep);color:var(--linen);border-radius:18px;padding:24px;display:flex;align-items:center;font-family:var(--serif);font-style:italic;font-size:clamp(20px,2vw,28px);line-height:1.15}
+
+/* ritual / steps */
+.ritual{background:var(--olive-deep);color:var(--linen);padding:clamp(96px,12vw,160px) 0;position:relative;overflow:hidden}
+.ritual .eyebrow{color:var(--lime)}
+.ritual h2 em{color:var(--lime)}
+.ritual-leaf{position:absolute;right:-120px;top:-60px;width:520px;opacity:.07;filter:brightness(0) invert(1);pointer-events:none}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px}
+.step{border:1px solid rgba(245,240,230,.16);border-radius:24px;padding:36px 32px;transition:background .4s,border-color .4s}
+.step:hover{background:rgba(245,240,230,.05);border-color:rgba(169,199,126,.5)}
+.step .n{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--lime));color:var(--olive-deep);display:grid;place-items:center;font-family:var(--serif);font-size:24px;font-weight:600;margin-bottom:28px}
+.step h3{font-size:30px;margin-bottom:12px}
+.step p{opacity:.78;font-size:15.5px}
+
+/* promise */
+.promise{padding:clamp(96px,12vw,160px) 0}
+.promise-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:center}
+.promise-img{border-radius:24px;overflow:hidden;aspect-ratio:4/5}
+.promise-img img{width:100%;height:100%;object-fit:cover}
+.promise ul{list-style:none;margin-top:40px}
+.promise li{display:flex;gap:20px;padding:22px 0;border-top:1px solid var(--line)}
+.promise li:last-child{border-bottom:1px solid var(--line)}
+.promise li svg{flex:none;width:26px;height:26px;color:var(--olive);margin-top:4px}
+.promise li h3{font-size:24px;margin-bottom:4px}
+.promise li p{color:var(--muted);font-size:15.5px}
+
+/* faq */
+.faq{padding:0 0 clamp(96px,12vw,160px)}
+.faq-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(40px,6vw,96px)}
+details{border-bottom:1px solid var(--line);padding:24px 0}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:24px;font-family:var(--serif);font-size:clamp(22px,2.4vw,28px)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--sans);font-weight:300;font-size:28px;line-height:1;color:var(--olive);transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:12px;max-width:620px}
+
+/* cta */
+.cta{position:relative;color:var(--paper);overflow:hidden;text-align:center}
+.cta-bg{position:absolute;inset:0}
+.cta-bg img{width:100%;height:100%;object-fit:cover}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(31,39,18,.72)}
+.cta .wrap{position:relative;padding-top:clamp(110px,14vw,190px);padding-bottom:clamp(110px,14vw,190px)}
+.cta .eyebrow{color:var(--lime)}
+.cta h2{font-size:clamp(46px,8vw,112px);margin:22px auto 28px;max-width:960px}
+.cta h2 em{color:var(--lime)}
+.cta p{max-width:520px;margin:0 auto 40px;opacity:.88}
+
+/* footer */
+footer{background:#1e2512;color:rgba(245,240,230,.7);padding:72px 0 36px;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+footer .brand{color:var(--linen);margin-bottom:18px}
+footer .brand img{filter:none}
+footer h4{font-family:var(--sans);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--lime);font-weight:500;margin-bottom:16px}
+footer li{list-style:none;margin-bottom:8px}
+footer a:hover{color:var(--linen)}
+.foot-bottom{margin-top:56px;padding-top:24px;border-top:1px solid rgba(245,240,230,.12);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px}
+
+/* floating whatsapp */
+.wa-float{position:fixed;right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.25);transition:transform .3s}
+.wa-float:hover{transform:scale(1.08)}
+.menu-open .wa-float{opacity:0;pointer-events:none}
+.wa-float svg{width:30px;height:30px}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;background:#25d366;animation:pulse 2.4s ease-out infinite;z-index:-1}
+@keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.6);opacity:0}}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.no-js .reveal{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .nav-links{display:none}
+  .menu-btn{display:flex}
+  .hero-grid,.intro-grid,.promise-grid,.faq-grid{grid-template-columns:1fr}
+  .intro-media{max-width:440px}
+  .intro-media .badge{right:-8px;width:120px;height:120px}
+  .steps{gap:16px}
+  .step{padding:28px 22px}
+  .promise-img{aspect-ratio:4/3}
+  .svc{grid-template-columns:44px 1fr auto;gap:16px 20px}
+  .svc p{grid-column:2/4;grid-row:2}
+  .svc .book span{display:none}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}
+  .g1{grid-column:1/3;grid-row:span 2}
+  .g2,.g3,.g4,.g5,.gal .quote{grid-column:span 1;grid-row:span 1}
+  .gal .quote{grid-column:1/3}
+}
+@media (max-width:700px){
+  .steps{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .nav .btn span{display:none}
+  .nav .btn{padding:12px}
+  .brand span{font-size:22px}
+  .pillars{grid-template-columns:1fr;gap:18px}
+  .foot-grid{grid-template-columns:1fr}
+  .hero-meta{gap:20px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body class="no-js">
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Sxral Spa home"><img src="images/logo-96.png" width="96" height="125" alt=""><span>SXRAL</span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#services">Rituals</a>
+      <a href="#space">The Space</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+    <a class="btn btn-solid wa" data-msg="Hello Sxral Spa, I'd like to book an appointment." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2C2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2.1 12 .1 5.5.1.1 5.4.1 12c0 2.1.5 4.1 1.6 5.9L0 24l6.3-1.7c1.7.9 3.7 1.4 5.7 1.4 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.4z"/></svg><span>Book now</span></a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mmenu" id="mmenu">
+    <nav aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#services">Rituals</a>
+      <a href="#space">The Space</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-light wa" data-msg="Hello Sxral Spa, I'd like to book a session." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa-icon"/></svg>Book a session</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-bg"><picture><source type="image/webp" srcset="images/vines-480.webp 480w, images/vines-800.webp 800w, images/vines-1200.webp 1200w, images/vines-1800.webp 1800w" sizes="100vw"><img src="images/vines.jpg" width="1800" height="1200" alt="Sxral Spa treatment room with hanging white blossoms and green vines" fetchpriority="high" decoding="async"></picture></div>
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Sxral Spa · Abuja, FCT</p>
+          <h1>Where discretion<br>meets <em>excellence.</em></h1>
+        </div>
+        <div class="hero-side">
+          <p>A private, plant-filled sanctuary in the heart of Abuja. Slow down, breathe out, and let skilled hands do the rest.</p>
+          <a class="btn btn-light wa" data-msg="Hello Sxral Spa, I'd like to book a session." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa-icon"/></svg>Book a session</a>
+        </div>
+      </div>
+      <div class="hero-meta">
+        <div><b>Private</b>suites</div>
+        <div><b>Skilled</b>therapists</div>
+        <div><b>By appointment</b>only</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro" id="about">
+    <div class="wrap intro-grid">
+      <div class="intro-media reveal">
+        <div class="arch"><picture><source type="image/webp" srcset="images/lounge-gold-480.webp 480w, images/lounge-gold-800.webp 800w, images/lounge-gold-1200.webp 1200w, images/lounge-gold-1800.webp 1800w" sizes="(max-width: 960px) 92vw, 40vw"><img src="images/lounge-gold.jpg" width="1800" height="1200" alt="Sxral Spa relaxation lounge with plant, sofa and illuminated Sxral sign" loading="lazy" decoding="async"></picture></div>
+        <div class="badge">
+          <svg viewBox="0 0 150 150" aria-hidden="true"><defs><path id="circ" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs><text font-family="Jost" font-size="10.5" letter-spacing="3.6" fill="#ebe3d3"><textPath href="#circ">RELAX · RESTORE · RENEW · SXRAL SPA ·</textPath></text></svg>
+          <picture><source type="image/webp" srcset="images/logo-192.webp"><img src="images/logo-192.png" width="192" height="250" alt="" loading="lazy"></picture>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Our sanctuary</p>
+        <h2>Grounded in nature,<br>tuned for <em>stillness.</em></h2>
+        <p>At Sxral, every room is draped in blossoms and greenery, softly lit and kept quiet, so the outside world falls away the moment you walk in.</p>
+        <p>Our name stands for something simple: your time here is yours alone. Expert care, total privacy, and an atmosphere designed for deep rest.</p>
+        <div class="pillars">
+          <div><h3>Balance</h3><p>Treatments that release tension and restore calm.</p></div>
+          <div><h3>Privacy</h3><p>Discreet suites, unhurried sessions, no crowds.</p></div>
+          <div><h3>Care</h3><p>Fresh linens, clean rooms, attentive therapists.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Swedish massage</span><span>Hot stone therapy</span><span>Deep tissue</span><span>Aromatherapy</span><span>Couples rituals</span><span>Facials</span>
+      <span>Swedish massage</span><span>Hot stone therapy</span><span>Deep tissue</span><span>Aromatherapy</span><span>Couples rituals</span><span>Facials</span>
+    </div>
+  </div>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><p class="eyebrow">Rituals &amp; treatments</p><h2>Choose your <em>ritual.</em></h2></div>
+        <p>Tap any treatment to book it directly on WhatsApp. We'll confirm your time, duration and pricing.</p>
+      </div>
+      <div class="svc-list">
+        <a class="svc wa reveal" data-msg="Hello Sxral Spa, I'd like to book a Swedish Massage." href="#"><span class="num">01</span><h3>Swedish Massage</h3><p>Long, flowing strokes that melt everyday stress and improve circulation.</p><span class="book"><span>Book</span><i>&rarr;</i></span></a>
+        <a class="svc wa reveal" data-msg="Hello Sxral Spa, I'd like to book a Deep Tissue Massage." href="#"><span class="num">02</span><h3>Deep Tissue</h3><p>Firm, focused pressure to release knots and chronic muscle tension.</p><span class="book"><span>Book</span><i>&rarr;</i></span></a>
+        <a class="svc wa reveal" data-msg="Hello Sxral Spa, I'd like to book Hot Stone Therapy." href="#"><span class="num">03</span><h3>Hot Stone Therapy</h3><p>Smooth heated stones ease the body into deep, grounded relaxation.</p><span class="book"><span>Book</span><i>&rarr;</i></span></a>
+        <a class="svc wa reveal" data-msg="Hello Sxral Spa, I'd like to book an Aromatherapy Massage." href="#"><span class="num">04</span><h3>Aromatherapy</h3><p>Essential oils chosen for your mood: calming, uplifting or restoring.</p><span class="book"><span>Book</span><i>&rarr;</i></span></a>
+        <a class="svc wa reveal" data-msg="Hello Sxral Spa, I'd like to book a Couples Massage." href="#"><span class="num">05</span><h3>Couples Ritual</h3><p>Side-by-side treatments in a private suite, made for sharing calm.</p><span class="book"><span>Book</span><i>&rarr;</i></span></a>
+        <a class="svc wa reveal" data-msg="Hello Sxral Spa, I'd like to book a Facial." href="#"><span class="num">06</span><h3>Facials</h3><p>Cleanse, exfoliate and nourish for skin that looks rested and bright.</p><span class="book"><span>Book</span><i>&rarr;</i></span></a>
+        <a class="svc wa reveal" data-msg="Hello Sxral Spa, I'd like to book a Body Scrub." href="#"><span class="num">07</span><h3>Body Scrub &amp; Polish</h3><p>Gentle exfoliation followed by rich hydration, head to toe.</p><span class="book"><span>Book</span><i>&rarr;</i></span></a>
+        <a class="svc wa reveal" data-msg="Hello Sxral Spa, I'd like to book Foot Reflexology." href="#"><span class="num">08</span><h3>Foot Reflexology</h3><p>Pressure-point work on the feet to restore balance through the whole body.</p><span class="book"><span>Book</span><i>&rarr;</i></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="space">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><p class="eyebrow">The space</p><h2>Step inside <em>Sxral.</em></h2></div>
+        <p>Blossom ceilings, warm textures and soft light. Every corner is made to slow you down.</p>
+      </div>
+      <div class="gal">
+        <figure class="g1 reveal"><picture><source type="image/webp" srcset="images/suite-480.webp 480w, images/suite-800.webp 800w, images/suite-1200.webp 1200w, images/suite-1800.webp 1800w" sizes="(max-width: 960px) 92vw, 56vw"><img src="images/suite.jpg" width="1800" height="1200" alt="Treatment suite with tufted headboard, gold curtains and blossom ceiling" loading="lazy" decoding="async"></picture><figcaption>Treatment suite</figcaption></figure>
+        <figure class="g2 reveal"><picture><source type="image/webp" srcset="images/lounge-480.webp 480w, images/lounge-800.webp 800w, images/lounge-1200.webp 1200w" sizes="(max-width: 960px) 46vw, 40vw"><img src="images/lounge.jpg" width="1800" height="1200" alt="Relaxation lounge with sofa, plant and robe" loading="lazy" decoding="async"></picture><figcaption>Lounge</figcaption></figure>
+        <figure class="g3 reveal"><picture><source type="image/webp" srcset="images/vines-480.webp 480w, images/vines-800.webp 800w, images/vines-1200.webp 1200w" sizes="(max-width: 960px) 46vw, 40vw"><img src="images/vines.jpg" width="1800" height="1200" alt="Fresh rolled towels beneath hanging vines" loading="lazy" decoding="async"></picture><figcaption>Fresh linens</figcaption></figure>
+        <figure class="g4 reveal"><picture><source type="image/webp" srcset="images/room-a-480.webp 480w, images/room-a-800.webp 800w, images/room-a-1200.webp 1200w" sizes="(max-width: 960px) 46vw, 33vw"><img src="images/room-a.jpg" width="1200" height="1600" alt="Sxral reception with pink walls and blossom installation" loading="lazy" decoding="async"></picture><figcaption>Reception</figcaption></figure>
+        <figure class="g5 reveal"><picture><source type="image/webp" srcset="images/lounge-gold-480.webp 480w, images/lounge-gold-800.webp 800w" sizes="(max-width: 960px) 46vw, 25vw"><img src="images/lounge-gold.jpg" width="1800" height="1200" alt="Sxral illuminated logo sign in the lounge" loading="lazy" decoding="async"></picture><figcaption>Arrival</figcaption></figure>
+        <div class="quote reveal">&ldquo;Your time here is yours alone.&rdquo;</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ritual">
+    <picture><source type="image/webp" srcset="images/logo-520.webp"><img class="ritual-leaf" src="images/logo-520.png" width="520" height="677" alt="" aria-hidden="true" loading="lazy"></picture>
+    <div class="wrap">
+      <div class="reveal"><p class="eyebrow">How it works</p><h2>Three steps to <em>stillness.</em></h2></div>
+      <div class="steps">
+        <div class="step reveal"><div class="n">1</div><h3>Message us</h3><p>Send a WhatsApp to 0706 113 6203 with the treatment and time you'd like.</p></div>
+        <div class="step reveal"><div class="n">2</div><h3>Confirm</h3><p>We'll reply with availability, pricing and directions to our Abuja location.</p></div>
+        <div class="step reveal"><div class="n">3</div><h3>Unwind</h3><p>Arrive, settle into your private suite, and let the day melt away.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promise">
+    <div class="wrap promise-grid">
+      <div class="promise-img reveal"><picture><source type="image/webp" srcset="images/room-b-480.webp 480w, images/room-b-800.webp 800w, images/room-b-1200.webp 1200w, images/room-b-1800.webp 1800w" sizes="(max-width: 960px) 92vw, 46vw"><img src="images/room-b.jpg" width="1600" height="1200" alt="Private suite with tufted bed and mood lighting" loading="lazy" decoding="async"></picture></div>
+      <div class="reveal">
+        <p class="eyebrow">The Sxral promise</p>
+        <h2>Calm you can <em>count on.</em></h2>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg><div><h3>Complete discretion</h3><p>Private suites and a quiet, respectful team. What happens at Sxral stays at Sxral.</p></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 21c0-9 5-15 14-17-1 9-6 15-14 17z M5 21l7-7"/></svg><div><h3>Natural atmosphere</h3><p>Greenery, blossoms and warm light, a world away from Abuja's busy streets.</p></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12l5 5L20 6"/></svg><div><h3>Spotless standards</h3><p>Freshly laundered towels and robes, sanitised rooms, every single session.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap faq-grid">
+      <div class="reveal"><p class="eyebrow">Questions</p><h2>Good to <em>know.</em></h2></div>
+      <div class="reveal">
+        <details open><summary>How do I book?</summary><p>Tap any "Book" button on this page to open WhatsApp, or message 0706 113 6203 directly. Tell us the treatment and preferred time, and we'll confirm.</p></details>
+        <details><summary>Where are you located?</summary><p>We're in Abuja, FCT. For our guests' privacy, we share the exact address and directions when your booking is confirmed.</p></details>
+        <details><summary>How much do treatments cost?</summary><p>Pricing depends on the treatment and session length. Send us a message and we'll share our current menu and rates.</p></details>
+        <details><summary>Can I book for two?</summary><p>Yes. Our couples ritual lets you enjoy treatments side by side in a private suite. Just mention it when you book.</p></details>
+        <details><summary>What should I bring?</summary><p>Just yourself. We provide fresh towels, robes and everything you need for your session.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta-bg"><picture><source type="image/webp" srcset="images/suite-480.webp 480w, images/suite-800.webp 800w, images/suite-1200.webp 1200w, images/suite-1800.webp 1800w" sizes="100vw"><img src="images/suite.jpg" width="1800" height="1200" alt="" loading="lazy" decoding="async"></picture></div>
+    <div class="wrap reveal">
+      <p class="eyebrow">Your sanctuary awaits</p>
+      <h2>Make time for <em>yourself.</em></h2>
+      <p>One message is all it takes. Book your ritual at Sxral Spa, Abuja.</p>
+      <a class="btn btn-light wa" data-msg="Hello Sxral Spa, I'd like to book an appointment." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa-icon"/></svg>Book a session</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#top" class="brand"><img src="images/logo-96.png" width="96" height="125" alt="" loading="lazy"><span>SXRAL</span></a>
+        <p>Where discretion meets excellence.<br>A private spa sanctuary in Abuja, FCT.</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="#about">About</a></li><li><a href="#services">Rituals</a></li><li><a href="#space">The Space</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a class="wa" data-msg="Hello Sxral Spa!" href="#">WhatsApp</a></li><li><a href="tel:+2347061136203">0706 113 6203</a></li></ul></div>
+      <div><h4>Visit</h4><ul><li>Abuja, FCT</li><li>By appointment</li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>&copy; <span id="yr">2026</span> Sxral Spa. All rights reserved.</span><span>Abuja, Nigeria</span></div>
+  </div>
+</footer>
+
+<a class="wa-float wa" data-msg="Hello Sxral Spa, I'd like to book an appointment." href="#" aria-label="Chat with Sxral Spa on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa-icon"/></svg></a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wa-icon" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2C2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2.1 12 .1 5.5.1.1 5.4.1 12c0 2.1.5 4.1 1.6 5.9L0 24l6.3-1.7c1.7.9 3.7 1.4 5.7 1.4 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.4z"/></symbol></svg>
+
+<script>
+(function(){
+  var PHONE="2347061136203";
+  document.body.classList.remove("no-js");
+  document.querySelectorAll(".wa").forEach(function(a){
+    a.href="https://wa.me/"+PHONE+"?text="+encodeURIComponent(a.dataset.msg||"Hello Sxral Spa!");
+    a.target="_blank";a.rel="noopener";
+  });
+  var nav=document.getElementById("nav");
+  function onScroll(){nav.classList.toggle("scrolled",window.scrollY>40)}
+  onScroll();window.addEventListener("scroll",onScroll,{passive:true});
+  var menuBtn=document.getElementById("menu-btn"),mmenu=document.getElementById("mmenu");
+  function setMenu(open){
+    nav.classList.toggle("open",open);
+    menuBtn.setAttribute("aria-expanded",open);
+    menuBtn.setAttribute("aria-label",open?"Close menu":"Open menu");
+    document.body.style.overflow=open?"hidden":"";
+    document.body.classList.toggle("menu-open",open);
+  }
+  menuBtn.addEventListener("click",function(){setMenu(!nav.classList.contains("open"))});
+  mmenu.querySelectorAll("nav a").forEach(function(a){a.addEventListener("click",function(e){
+    var t=document.querySelector(a.getAttribute("href"));
+    e.preventDefault();setMenu(false);
+    requestAnimationFrame(function(){t.scrollIntoView({behavior:"smooth"});history.replaceState(null,"",a.getAttribute("href"))});
+  })});
+  mmenu.querySelector(".wa").addEventListener("click",function(){setMenu(false)});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")setMenu(false)});
+  window.matchMedia("(min-width:961px)").addEventListener("change",function(e){if(e.matches)setMenu(false)});
+  var els=document.querySelectorAll(".reveal");
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add("in")})}
+  document.getElementById("yr").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
